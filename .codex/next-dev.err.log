@@ -2177,3 +2177,4 @@ Import traces:
 
     at <unknown> (Error: ./src/components/editor/block-list.tsx:519:7)
     at <unknown> (Error: (./src/components/editor/block-list.tsx:519:7)
+⚠ Found a change in next.config.ts. Restarting the server to apply the changes...

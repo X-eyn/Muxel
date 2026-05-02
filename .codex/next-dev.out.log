@@ -442,3 +442,10 @@
  GET / 200 in 140ms (next.js: 3ms, application-code: 137ms)
  GET / 200 in 52ms (next.js: 3ms, application-code: 48ms)
  GET / 200 in 55ms (next.js: 4ms, application-code: 51ms)
+▲ Next.js 16.2.4 (Turbopack)
+- Local:         http://127.0.0.1:3000
+- Network:       http://127.0.0.1:3000
+✓ Ready in 857ms
+
+ GET / 200 in 916ms (next.js: 519ms, application-code: 397ms)
+✓ Compiled in 101ms
