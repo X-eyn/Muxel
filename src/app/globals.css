@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0d0d0d;
+  --foreground: #f3f2ee;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-jetbrains-mono);
+}
+
+html {
+  background: #0d0d0d;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-jetbrains-mono), monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+textarea,
+input {
+  font: inherit;
+}
+
+textarea {
+  appearance: none;
+}
+
+.muxel-editor {
+  white-space: pre-wrap;
+  word-break: break-word;
+  user-select: text;
+}
+
+.muxel-editor-placeholder::before {
+  content: attr(data-placeholder);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  color: #9a948a;
+  font-size: 16px;
+  line-height: 1.5rem;
+  pointer-events: none;
+  user-select: none;
+}
+
+.muxel-editor p {
+  min-height: 1.5rem;
+}
+
+.muxel-editor a {
+  color: #8aa4ff;
+  text-decoration: underline;
+}
+
+.muxel-editor code {
+  border-radius: 0.375rem;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.1rem 0.3rem;
+}
+
+::selection {
+  background: rgba(116, 182, 255, 0.58);
+}
+
+.muxel-selection-chrome,
+.muxel-selection-chrome * {
+  user-select: none !important;
+}
+
+.muxel-selection-chrome::selection,
+.muxel-selection-chrome *::selection {
+  background: transparent;
+  color: inherit;
+}
+
+body.muxel-cross-block-selecting,
+body.muxel-cross-block-selecting .muxel-editor,
+body.muxel-cross-block-selecting .muxel-editor * {
+  user-select: none !important;
+}

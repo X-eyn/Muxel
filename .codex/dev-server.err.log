@@ -1,0 +1,8 @@
+⨯ Another next dev server is already running.
+
+- Local:        http://localhost:3000
+- PID:          11292
+- Dir:          C:\Users\User\Downloads\CODES\MUXEL
+- Log:          .next\dev\logs\next-development.log
+
+Run taskkill /PID 11292 /F to stop it.

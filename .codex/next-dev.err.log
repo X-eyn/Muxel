@@ -1,0 +1,2179 @@
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <section className="mx-auto fl...">
+      <BlockList>
+        <DndContext sensors={[...]} collisionDetection={function closestCenter} onDragEnd={function handleDragEnd}>
+          <SortableBranch blockIds={[...]} depth={0}>
+            <SortableContext items={[...]} strategy={function verticalListSortingStrategy}>
+              <BlockTreeNode blockId="block-initial" depth={0}>
+                <BlockWrapper blockId="block-initial" depth={0}>
+                  <div ref={function useCombinedRefs.useMemo} style={{...}} className={"group re..."}>
+                    <div className="relative f...">
+                      <div className="flex flex-...">
+                        <button>
+                        <button
+                          ref={function useNodeRef.useCallback[setNodeRef]}
+                          type="button"
+                          role="button"
+                          tabIndex={0}
+                          aria-disabled={false}
+                          aria-pressed={undefined}
+                          aria-roledescription="sortable"
++                         aria-describedby="DndDescribedBy-0"
+-                         aria-describedby="DndDescribedBy-1"
+                          onPointerDown={function useSyntheticListeners.useMemo}
+                          onKeyDown={function useSyntheticListeners.useMemo}
+                          onClick={function onClick}
+                          className="rounded-md p-1 text-[#9B9A97] transition hover:bg-[#EFEFEF]/80 hover:text-[#37352F]"
+                          aria-label="Open Text block menu"
+                        >
+                    ...
+          ...
+          ...
+ 
+[browser] [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <section className="mx-auto fl...">
+      <BlockList>
+        <DndContext sensors={[...]} collisionDetection={function closestCenter} onDragEnd={function handleDragEnd}>
+          <SortableBranch blockIds={[...]} depth={0}>
+            <SortableContext items={[...]} strategy={function verticalListSortingStrategy}>
+              <BlockTreeNode blockId="block-initial" depth={0}>
+                <BlockWrapper blockId="block-initial" depth={0}>
+                  <div ref={function useCombinedRefs.useMemo} style={{...}} className={"group re..."}>
+                    <div className="relative f...">
+                      <div className="flex flex-...">
+                        <button>
+                        <button
+                          ref={function useNodeRef.useCallback[setNodeRef]}
+                          type="button"
+                          role="button"
+                          tabIndex={0}
+                          aria-disabled={false}
+                          aria-pressed={undefined}
+                          aria-roledescription="sortable"
++                         aria-describedby="DndDescribedBy-0"
+-                         aria-describedby="DndDescribedBy-2"
+                          onPointerDown={function useSyntheticListeners.useMemo}
+                          onKeyDown={function useSyntheticListeners.useMemo}
+                          onClick={function onClick}
+                          className="rounded-md p-1 text-[#9B9A97] transition hover:bg-[#EFEFEF]/80 hover:text-[#37352F]"
+                          aria-label="Open Text block menu"
+                        >
+                    ...
+          ...
+          ...
+ 
+[browser] [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <section className="mx-auto fl...">
+      <BlockList>
+        <DndContext sensors={[...]} collisionDetection={function closestCenter} onDragEnd={function handleDragEnd}>
+          <SortableBranch blockIds={[...]} depth={0}>
+            <SortableContext items={[...]} strategy={function verticalListSortingStrategy}>
+              <BlockTreeNode blockId="block-initial" depth={0}>
+                <BlockWrapper blockId="block-initial" depth={0}>
+                  <div ref={function useCombinedRefs.useMemo} style={{...}} className={"group re..."}>
+                    <div className="relative f...">
+                      <div className="flex flex-...">
+                        <button>
+                        <button
+                          ref={function useNodeRef.useCallback[setNodeRef]}
+                          type="button"
+                          role="button"
+                          tabIndex={0}
+                          aria-disabled={false}
+                          aria-pressed={undefined}
+                          aria-roledescription="sortable"
++                         aria-describedby="DndDescribedBy-0"
+-                         aria-describedby="DndDescribedBy-3"
+                          onPointerDown={function useSyntheticListeners.useMemo}
+                          onKeyDown={function useSyntheticListeners.useMemo}
+                          onClick={function onClick}
+                          className="rounded-md p-1 text-[#9B9A97] transition hover:bg-[#EFEFEF]/80 hover:text-[#37352F]"
+                          aria-label="Open Text block menu"
+                        >
+                    ...
+          ...
+          ...
+ 
+[browser] [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[browser] NotAllowedError: Failed to execute 'writeText' on 'Clipboard': Write permission denied.
+NotAllowedError: Failed to execute 'writeText' on 'Clipboard': Write permission denied. (file://C:/Users/User/Downloads/CODES/MUXEL/.next/dev/static/chunks/node_modules_next_dist_compiled_next-devtools_index_0553esy.js:2101:1285)
+[browser] [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+[browser] [tiptap warn]: Duplicate extension names found: ['link', 'underline']. This can lead to issues.
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\User\AppData\Local\Temp\next-panic-90e7b8f0d71144969a58778dc8a58a69.log.
+
+To help make Turbopack better, report this error by clicking here: https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20%5Bproject%5D%2Fsrc%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29&body=Turbopack%20version%3A%20%602275bd85%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0A%5Bproject%5D%2Fsrc%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A%0ACaused%20by%3A%0A-%20reading%20file%20%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDownloads%5C%5CCODES%5C%5CMUXEL%5C%5C.codex%5C%5Cmuxel-dom.html%22%0A-%20The%20process%20cannot%20access%20the%20file%20because%20it%20is%20being%20used%20by%20another%20process.%20%28os%20error%2032%29%0A%0ADebug%20info%3A%0A-%20Execution%20of%20subscribe_issues_and_diags_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aserver_changed%20failed%0A-%20Execution%20of%20%2AProject%3A%3Aserver_changed%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aserver_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppProject%3A%3Aapp_module_graphs%20failed%0A-%20Execution%20of%20%2A%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aadditional_entries%20failed%0A-%20Execution%20of%20ModuleGraph%3A%3Afrom_graphs%20failed%0A-%20Execution%20of%20ModuleGraph%3A%3Acreate%20failed%0A-%20Execution%20of%20SingleModuleGraph%3A%3Anew_with_entries_visited_intern%20failed%0A-%20%5Bproject%5D%2Fsrc%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A-%20Execution%20of%20primary_chunkable_referenced_modules%20failed%0A-%20Execution%20of%20%3CCssModule%20as%20Module%3E%3A%3Areferences%20failed%0A-%20Execution%20of%20parse_css%20failed%0A-%20Execution%20of%20%3CPostCssTransformedAsset%20as%20Asset%3E%3A%3Acontent%20failed%0A-%20Execution%20of%20PostCssTransformedAsset%3A%3Aprocess%20failed%0A-%20Execution%20of%20evaluate_webpack_loader%20failed%0A-%20Execution%20of%20%3CDiskFileSystem%20as%20FileSystem%3E%3A%3Aread%20failed%0A-%20reading%20file%20%22C%3A%5C%5CUsers%5C%5CUser%5C%5CDownloads%5C%5CCODES%5C%5CMUXEL%5C%5C.codex%5C%5Cmuxel-dom.html%22%0A-%20The%20process%20cannot%20access%20the%20file%20because%20it%20is%20being%20used%20by%20another%20process.%20%28os%20error%2032%29%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace
+-----
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  [90m2 |[0m
+  [90m3 |[0m [36mimport[0m { [33mBlockList[0m } [36mfrom[0m [32m"@/components/editor/block-list"[0m;
+[31m[1m>[0m [90m4 |[0m [36mimport[0m { [33mPageHeader[0m } [36mfrom[0m [32m"@/components/editor/page-header"[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m [36mexport[0m [36mfunction[0m [33mMuxelEditorPage[0m() {
+  [90m7 |[0m   [36mreturn[0m (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[browser] Uncaught Error: ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  2 |
+  3 | import { BlockList } from "@/components/editor/block-list";
+> 4 | import { PageHeader } from "@/components/editor/page-header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function MuxelEditorPage() {
+  7 |   return (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/components/editor/muxel-editor-page.tsx:4:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./src/components/editor/muxel-editor-page.tsx:4:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] Uncaught Error: ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  2 |
+  3 | import { BlockList } from "@/components/editor/block-list";
+> 4 | import { PageHeader } from "@/components/editor/page-header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function MuxelEditorPage() {
+  7 |   return (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/components/editor/muxel-editor-page.tsx:4:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./src/components/editor/muxel-editor-page.tsx:4:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  2 |
+  3 | import { BlockList } from "@/components/editor/block-list";
+> 4 | import { PageHeader } from "@/components/editor/page-header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function MuxelEditorPage() {
+  7 |   return (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  2 |
+  3 | import { BlockList } from "@/components/editor/block-list";
+> 4 | import { PageHeader } from "@/components/editor/page-header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function MuxelEditorPage() {
+  7 |   return (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  2 |
+  3 | import { BlockList } from "@/components/editor/block-list";
+> 4 | import { PageHeader } from "@/components/editor/page-header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function MuxelEditorPage() {
+  7 |   return (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  2 |
+  3 | import { BlockList } from "@/components/editor/block-list";
+> 4 | import { PageHeader } from "@/components/editor/page-header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function MuxelEditorPage() {
+  7 |   return (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  2 |
+  3 | import { BlockList } from "@/components/editor/block-list";
+> 4 | import { PageHeader } from "@/components/editor/page-header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function MuxelEditorPage() {
+  7 |   return (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  2 |
+  3 | import { BlockList } from "@/components/editor/block-list";
+> 4 | import { PageHeader } from "@/components/editor/page-header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function MuxelEditorPage() {
+  7 |   return (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/components/editor/muxel-editor-page.tsx:4:1
+Module not found: Can't resolve '@/components/editor/page-header'
+  2 |
+  3 | import { BlockList } from "@/components/editor/block-list";
+> 4 | import { PageHeader } from "@/components/editor/page-header";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export function MuxelEditorPage() {
+  7 |   return (
+
+Import map: aliased to relative './src/components/editor/page-header' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/components/editor/muxel-editor-page.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] The result of getSnapshot should be cached to avoid an infinite loop 
+    at useOrderedBlockIds (src/store/editor-store.ts:567:10)
+    at MuxelEditorPage (src/components/editor/muxel-editor-page.tsx:10:45)
+    at Set.forEach (<anonymous>)
+  565 |
+  566 | export function useOrderedBlockIds() {
+> 567 |   return useEditorStore((state) => flattenBlockIds(state));
+      |          ^
+  568 | }
+  569 |
+  570 | export function useCanDeleteBlock(blockId: string) { (src/store/editor-store.ts:567:10)
+[browser] Uncaught Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+    at Home (src\app\page.tsx:4:10)
+  2 |
+  3 | export default function Home() {
+> 4 |   return <MuxelEditorPage />;
+    |          ^
+  5 | }
+  6 |
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[browser] The result of getServerSnapshot should be cached to avoid an infinite loop 
+    at useOrderedBlockIds (src/store/editor-store.ts:567:10)
+    at MuxelEditorPage (src/components/editor/muxel-editor-page.tsx:10:45)
+  565 |
+  566 | export function useOrderedBlockIds() {
+> 567 |   return useEditorStore((state) => flattenBlockIds(state));
+      |          ^
+  568 | }
+  569 |
+  570 | export function useCanDeleteBlock(blockId: string) { (src/store/editor-store.ts:567:10)
+[browser] Uncaught Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+    at Home (src\app\page.tsx:4:10)
+  2 |
+  3 | export default function Home() {
+> 4 |   return <MuxelEditorPage />;
+    |          ^
+  5 | }
+  6 |
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[browser] The result of getServerSnapshot should be cached to avoid an infinite loop 
+    at useOrderedBlockIds (src/store/editor-store.ts:571:10)
+    at MuxelEditorPage (src/components/editor/muxel-editor-page.tsx:10:45)
+  569 |
+  570 | export function useOrderedBlockIds() {
+> 571 |   return useEditorStore((state) => flattenBlockIds(state));
+      |          ^
+  572 | }
+  573 |
+  574 | export function useCanDeleteBlock(blockId: string) { (src/store/editor-store.ts:571:10)
+[browser] Uncaught Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+    at Home (src\app\page.tsx:4:10)
+  2 |
+  3 | export default function Home() {
+> 4 |   return <MuxelEditorPage />;
+    |          ^
+  5 | }
+  6 |
+[browser] The result of getServerSnapshot should be cached to avoid an infinite loop 
+    at useOrderedBlockIds (src/store/editor-store.ts:571:10)
+    at MuxelEditorPage (src/components/editor/muxel-editor-page.tsx:10:45)
+  569 |
+  570 | export function useOrderedBlockIds() {
+> 571 |   return useEditorStore((state) => flattenBlockIds(state));
+      |          ^
+  572 | }
+  573 |
+  574 | export function useCanDeleteBlock(blockId: string) { (src/store/editor-store.ts:571:10)
+[browser] Uncaught Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+    at Home (src\app\page.tsx:4:10)
+  2 |
+  3 | export default function Home() {
+> 4 |   return <MuxelEditorPage />;
+    |          ^
+  5 | }
+  6 |
+[browser] The result of getServerSnapshot should be cached to avoid an infinite loop 
+    at useOrderedBlockIds (src/store/editor-store.ts:571:10)
+    at MuxelEditorPage (src/components/editor/muxel-editor-page.tsx:10:45)
+  569 |
+  570 | export function useOrderedBlockIds() {
+> 571 |   return useEditorStore((state) => flattenBlockIds(state));
+      |          ^
+  572 | }
+  573 |
+  574 | export function useCanDeleteBlock(blockId: string) { (src/store/editor-store.ts:571:10)
+[browser] Uncaught Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+    at Home (src\app\page.tsx:4:10)
+  2 |
+  3 | export default function Home() {
+> 4 |   return <MuxelEditorPage />;
+    |          ^
+  5 | }
+  6 |
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[browser] Uncaught ReferenceError: isSelected is not defined
+    at BlockWrapper (src/components/editor/block-wrapper.tsx:165:11)
+    at BlockTreeNode (src/components/editor/block-list.tsx:125:7)
+    at eval (src/components/editor/block-list.tsx:143:9)
+    at Array.map (<anonymous>)
+    at SortableBranch (src/components/editor/block-list.tsx:142:17)
+    at BlockList (src/components/editor/block-list.tsx:304:9)
+    at MuxelEditorPage (src/components/editor/page-header.tsx:77:26)
+    at Home (src\app\page.tsx:4:10)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ ReferenceError: isSelected is not defined
+    at BlockWrapper (src\components\editor\block-wrapper.tsx:165:11)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`} {
+  digest: '2084888311'
+}
+⨯ ReferenceError: isSelected is not defined
+    at BlockWrapper (src\components\editor\block-wrapper.tsx:165:11)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`} {
+  digest: '2084888311'
+}
+[browser] Uncaught ReferenceError: isSelected is not defined
+    at BlockWrapper (src/components/editor/block-wrapper.tsx:165:11)
+    at Set.forEach (<anonymous>)
+    at BlockTreeNode (src/components/editor/block-list.tsx:125:7)
+    at eval (src/components/editor/block-list.tsx:143:9)
+    at Array.map (<anonymous>)
+    at SortableBranch (src/components/editor/block-list.tsx:142:17)
+    at BlockList (src/components/editor/block-list.tsx:304:9)
+    at MuxelEditorPage (src/components/editor/muxel-editor-page.tsx:37:9)
+    at Home (src\app\page.tsx:4:10)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`}
+[browser] Uncaught ReferenceError: isSelected is not defined
+    at BlockWrapper (src/components/editor/block-wrapper.tsx:165:11)
+    at BlockTreeNode (src/components/editor/block-list.tsx:125:7)
+    at <unknown> (src/components/editor/block-list.tsx:143:9)
+    at Array.map (<anonymous>)
+    at SortableBranch (src/components/editor/block-list.tsx:142:17)
+    at BlockList (src/components/editor/block-list.tsx:304:9)
+    at MuxelEditorPage (src/components/editor/muxel-editor-page.tsx:37:9)
+    at Home (src\app\page.tsx:4:10)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ ReferenceError: isSelected is not defined
+    at BlockWrapper (src\components\editor\block-wrapper.tsx:165:11)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`} {
+  digest: '2132047995'
+}
+⨯ ReferenceError: isSelected is not defined
+    at BlockWrapper (src\components\editor\block-wrapper.tsx:165:11)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`} {
+  digest: '2132047995'
+}
+[browser] Uncaught ReferenceError: isSelected is not defined
+    at BlockWrapper (src/components/editor/block-wrapper.tsx:165:11)
+    at BlockTreeNode (src/components/editor/block-list.tsx:125:7)
+    at <unknown> (src/components/editor/block-list.tsx:143:9)
+    at Array.map (<anonymous>)
+    at SortableBranch (src/components/editor/block-list.tsx:142:17)
+    at BlockList (src/components/editor/block-list.tsx:312:9)
+    at MuxelEditorPage (src/components/editor/muxel-editor-page.tsx:37:9)
+    at Home (src\app\page.tsx:4:10)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ ReferenceError: isSelected is not defined
+    at BlockWrapper (src\components\editor\block-wrapper.tsx:165:11)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`} {
+  digest: '1651125169'
+}
+⨯ ReferenceError: isSelected is not defined
+    at BlockWrapper (src\components\editor\block-wrapper.tsx:165:11)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`} {
+  digest: '1651125169'
+}
+[browser] Uncaught ReferenceError: isSelected is not defined
+    at BlockWrapper (src/components/editor/block-wrapper.tsx:165:11)
+    at BlockTreeNode (src/components/editor/block-list.tsx:125:7)
+    at <unknown> (src/components/editor/block-list.tsx:143:9)
+    at Array.map (<anonymous>)
+    at SortableBranch (src/components/editor/block-list.tsx:142:17)
+    at BlockList (src/components/editor/block-list.tsx:312:9)
+    at MuxelEditorPage (src/components/editor/muxel-editor-page.tsx:37:9)
+    at Home (src\app\page.tsx:4:10)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`}
+[browser] Uncaught ReferenceError: isSelected is not defined
+    at BlockWrapper (src/components/editor/block-wrapper.tsx:165:11)
+    at BlockTreeNode (src/components/editor/block-list.tsx:125:7)
+    at <unknown> (src/components/editor/block-list.tsx:143:9)
+    at Array.map (<anonymous>)
+    at SortableBranch (src/components/editor/block-list.tsx:142:17)
+    at BlockList (src/components/editor/block-list.tsx:312:9)
+    at MuxelEditorPage (src/components/editor/muxel-editor-page.tsx:37:9)
+    at Home (src\app\page.tsx:4:10)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ ReferenceError: isSelected is not defined
+    at BlockWrapper (src\components\editor\block-wrapper.tsx:165:11)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`} {
+  digest: '2443115161'
+}
+⨯ ReferenceError: isSelected is not defined
+    at BlockWrapper (src\components\editor\block-wrapper.tsx:165:11)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`} {
+  digest: '2443115161'
+}
+[browser] Uncaught ReferenceError: isSelected is not defined
+    at BlockWrapper (src/components/editor/block-wrapper.tsx:165:11)
+    at BlockTreeNode (src/components/editor/block-list.tsx:125:7)
+    at <unknown> (src/components/editor/block-list.tsx:143:9)
+    at Array.map (<anonymous>)
+    at SortableBranch (src/components/editor/block-list.tsx:142:17)
+    at BlockList (src/components/editor/block-list.tsx:312:9)
+    at MuxelEditorPage (src/components/editor/muxel-editor-page.tsx:37:9)
+    at Home (src\app\page.tsx:4:10)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ ReferenceError: isSelected is not defined
+    at BlockWrapper (src\components\editor\block-wrapper.tsx:165:11)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`} {
+  digest: '2443115161'
+}
+⨯ ReferenceError: isSelected is not defined
+    at BlockWrapper (src\components\editor\block-wrapper.tsx:165:11)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`} {
+  digest: '2443115161'
+}
+[browser] Uncaught ReferenceError: isSelected is not defined
+    at BlockWrapper (src/components/editor/block-wrapper.tsx:165:11)
+    at BlockTreeNode (src/components/editor/block-list.tsx:125:7)
+    at <unknown> (src/components/editor/block-list.tsx:143:9)
+    at Array.map (<anonymous>)
+    at SortableBranch (src/components/editor/block-list.tsx:142:17)
+    at BlockList (src/components/editor/block-list.tsx:312:9)
+    at MuxelEditorPage (src/components/editor/muxel-editor-page.tsx:37:9)
+    at Home (src\app\page.tsx:4:10)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`}
+[browser] Uncaught ReferenceError: isSelected is not defined
+    at BlockWrapper (src/components/editor/block-wrapper.tsx:165:11)
+    at BlockTreeNode (src/components/editor/block-list.tsx:125:7)
+    at <unknown> (src/components/editor/block-list.tsx:143:9)
+    at Array.map (<anonymous>)
+    at SortableBranch (src/components/editor/block-list.tsx:142:17)
+    at BlockList (src/components/editor/block-list.tsx:312:9)
+    at MuxelEditorPage (src/components/editor/muxel-editor-page.tsx:37:9)
+    at Home (src\app\page.tsx:4:10)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ ReferenceError: isSelected is not defined
+    at BlockWrapper (src\components\editor\block-wrapper.tsx:165:11)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`} {
+  digest: '2443115161'
+}
+⨯ ReferenceError: isSelected is not defined
+    at BlockWrapper (src\components\editor\block-wrapper.tsx:165:11)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`} {
+  digest: '2443115161'
+}
+[browser] Uncaught ReferenceError: isSelected is not defined
+    at BlockWrapper (src/components/editor/block-wrapper.tsx:165:11)
+    at BlockTreeNode (src/components/editor/block-list.tsx:125:7)
+    at <unknown> (src/components/editor/block-list.tsx:143:9)
+    at Array.map (<anonymous>)
+    at SortableBranch (src/components/editor/block-list.tsx:142:17)
+    at BlockList (src/components/editor/block-list.tsx:312:9)
+    at MuxelEditorPage (src/components/editor/muxel-editor-page.tsx:37:9)
+    at Home (src\app\page.tsx:4:10)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ ReferenceError: isSelected is not defined
+    at BlockWrapper (src\components\editor\block-wrapper.tsx:165:11)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`} {
+  digest: '2443115161'
+}
+⨯ ReferenceError: isSelected is not defined
+    at BlockWrapper (src\components\editor\block-wrapper.tsx:165:11)
+  163 |         data-block-content-id={blockId}
+  164 |         className={`min-w-0 rounded-2xl ${
+> 165 |           isSelected && hasRangeSelection ? "block-range-selected" : ""
+      |           ^
+  166 |         } ${
+  167 |           depth > 0 ? "border-l border-white/8 pl-4" : ""
+  168 |         }`} {
+  digest: '2443115161'
+}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[browser] The result of getSnapshot should be cached to avoid an infinite loop 
+    at BlockTreeNode (src/components/editor/block-list.tsx:121:34)
+  119 |   depth: number;
+  120 | }) {
+> 121 |   const childIds = useEditorStore((state) => state.blocks[blockId]?.children ?? []);
+      |                                  ^
+  122 |
+  123 |   return (
+  124 |     <> (src/components/editor/block-list.tsx:121:34)
+[browser] Uncaught Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+    at <unknown> (src/components/editor/block-list.tsx:143:9)
+    at Array.map (<anonymous>)
+    at SortableBranch (src/components/editor/block-list.tsx:142:17)
+    at BlockList (src/components/editor/block-list.tsx:312:9)
+    at MuxelEditorPage (src/components/editor/muxel-editor-page.tsx:37:9)
+    at Home (src\app\page.tsx:4:10)
+  141 |     <SortableContext items={blockIds} strategy={verticalListSortingStrategy}>
+  142 |       {blockIds.map((blockId) => (
+> 143 |         <BlockTreeNode key={blockId} blockId={blockId} depth={depth} />
+      |         ^
+  144 |       ))}
+  145 |     </SortableContext>
+  146 |   );
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⨯ ./src/components/editor/block-list.tsx:519:7
+Expression expected
+  [90m517 |[0m   );
+  [90m518 |[0m }
+[31m[1m>[0m [90m519 |[0m       }
+  [90m    |[0m       [31m[1m^[0m
+  [90m520 |[0m     })
+  [90m521 |[0m     .map((element) => element.dataset.blockContentId)
+  [90m522 |[0m     .filter((blockId): blockId is string => [33mBoolean[0m(blockId));
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/components/editor/block-list.tsx [Client Component Browser]
+    ./src/components/editor/muxel-editor-page.tsx [Client Component Browser]
+    ./src/components/editor/muxel-editor-page.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/editor/block-list.tsx [Client Component SSR]
+    ./src/components/editor/muxel-editor-page.tsx [Client Component SSR]
+    ./src/components/editor/muxel-editor-page.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+⨯ ./src/components/editor/block-list.tsx:519:7
+Expression expected
+  [90m517 |[0m   );
+  [90m518 |[0m }
+[31m[1m>[0m [90m519 |[0m       }
+  [90m    |[0m       [31m[1m^[0m
+  [90m520 |[0m     })
+  [90m521 |[0m     .map((element) => element.dataset.blockContentId)
+  [90m522 |[0m     .filter((blockId): blockId is string => [33mBoolean[0m(blockId));
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/components/editor/block-list.tsx [Client Component Browser]
+    ./src/components/editor/muxel-editor-page.tsx [Client Component Browser]
+    ./src/components/editor/muxel-editor-page.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/editor/block-list.tsx [Client Component SSR]
+    ./src/components/editor/muxel-editor-page.tsx [Client Component SSR]
+    ./src/components/editor/muxel-editor-page.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+⨯ ./src/components/editor/block-list.tsx:519:7
+Expression expected
+  [90m517 |[0m   );
+  [90m518 |[0m }
+[31m[1m>[0m [90m519 |[0m       }
+  [90m    |[0m       [31m[1m^[0m
+  [90m520 |[0m     })
+  [90m521 |[0m     .map((element) => element.dataset.blockContentId)
+  [90m522 |[0m     .filter((blockId): blockId is string => [33mBoolean[0m(blockId));
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/components/editor/block-list.tsx [Client Component Browser]
+    ./src/components/editor/muxel-editor-page.tsx [Client Component Browser]
+    ./src/components/editor/muxel-editor-page.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/editor/block-list.tsx [Client Component SSR]
+    ./src/components/editor/muxel-editor-page.tsx [Client Component SSR]
+    ./src/components/editor/muxel-editor-page.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+⨯ ./src/components/editor/block-list.tsx:519:7
+Expression expected
+  [90m517 |[0m   );
+  [90m518 |[0m }
+[31m[1m>[0m [90m519 |[0m       }
+  [90m    |[0m       [31m[1m^[0m
+  [90m520 |[0m     })
+  [90m521 |[0m     .map((element) => element.dataset.blockContentId)
+  [90m522 |[0m     .filter((blockId): blockId is string => [33mBoolean[0m(blockId));
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/components/editor/block-list.tsx [Client Component Browser]
+    ./src/components/editor/muxel-editor-page.tsx [Client Component Browser]
+    ./src/components/editor/muxel-editor-page.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/editor/block-list.tsx [Client Component SSR]
+    ./src/components/editor/muxel-editor-page.tsx [Client Component SSR]
+    ./src/components/editor/muxel-editor-page.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+[browser] Uncaught Error: ./src/components/editor/block-list.tsx:519:7
+Expression expected
+  517 |   );
+  518 | }
+> 519 |       }
+      |       ^
+  520 |     })
+  521 |     .map((element) => element.dataset.blockContentId)
+  522 |     .filter((blockId): blockId is string => Boolean(blockId));
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/components/editor/block-list.tsx [Client Component Browser]
+    ./src/components/editor/muxel-editor-page.tsx [Client Component Browser]
+    ./src/components/editor/muxel-editor-page.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/editor/block-list.tsx [Client Component SSR]
+    ./src/components/editor/muxel-editor-page.tsx [Client Component SSR]
+    ./src/components/editor/muxel-editor-page.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./src/components/editor/block-list.tsx:519:7)
+    at <unknown> (Error: (./src/components/editor/block-list.tsx:519:7)
+[browser] Uncaught Error: ./src/components/editor/block-list.tsx:519:7
+Expression expected
+  517 |   );
+  518 | }
+> 519 |       }
+      |       ^
+  520 |     })
+  521 |     .map((element) => element.dataset.blockContentId)
+  522 |     .filter((blockId): blockId is string => Boolean(blockId));
+
+Parsing ecmascript source code failed
+
+Import traces:
+  Client Component Browser:
+    ./src/components/editor/block-list.tsx [Client Component Browser]
+    ./src/components/editor/muxel-editor-page.tsx [Client Component Browser]
+    ./src/components/editor/muxel-editor-page.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/components/editor/block-list.tsx [Client Component SSR]
+    ./src/components/editor/muxel-editor-page.tsx [Client Component SSR]
+    ./src/components/editor/muxel-editor-page.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+
+    at <unknown> (Error: ./src/components/editor/block-list.tsx:519:7)
+    at <unknown> (Error: (./src/components/editor/block-list.tsx:519:7)
